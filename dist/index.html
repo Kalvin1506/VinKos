@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vinkos connects verified workers with companies and households that need dependable manpower.">
+  <title>Vinkos — Work that moves you forward</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Vinkos home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+      <span>VINKOS</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#jobs">Find jobs</a>
+      <a href="#services">Hire workers</a>
+      <a href="#how">How it works</a>
+    </nav>
+    <div class="header-actions">
+      <button class="text-button" data-open="signin">Sign in</button>
+      <button class="button button-dark" data-open="post">Post a job</button>
+    </div>
+    <button class="menu-button" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> Trusted manpower, when you need it</div>
+        <h1>Work that moves<br><em>everyone forward.</em></h1>
+        <p>Vinkos connects skilled workers with verified employers—from local driving jobs to large-scale industrial manpower.</p>
+
+        <div class="intent-switch" role="tablist" aria-label="Choose your goal">
+          <button class="active" data-intent="find" role="tab" aria-selected="true">I want a job</button>
+          <button data-intent="hire" role="tab" aria-selected="false">I want to hire</button>
+        </div>
+        <form class="hero-search" id="heroSearch">
+          <label>
+            <span>What work?</span>
+            <input id="searchRole" type="search" placeholder="Driver, helper, operator…">
+          </label>
+          <label>
+            <span>Where?</span>
+            <input id="searchLocation" type="search" placeholder="City or area">
+          </label>
+          <button class="button button-accent" type="submit">Search jobs <span>→</span></button>
+        </form>
+        <div class="trust-row">
+          <div class="avatars" aria-hidden="true"><b>AK</b><b>RS</b><b>MJ</b></div>
+          <p><strong>Simple. Local. Reliable.</strong><br>Built for workers and growing businesses.</p>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Example Vinkos job match">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="worker-card">
+          <div class="worker-top">
+            <div class="worker-photo">RK</div>
+            <div><strong>Rajesh Kumar</strong><span>Heavy vehicle driver</span></div>
+            <i class="verified">✓</i>
+          </div>
+          <div class="worker-meta">
+            <span>★ 4.8 rating</span><span>8 yrs exp.</span><span>Available now</span>
+          </div>
+          <div class="match-line"><span></span><b>96% match</b></div>
+        </div>
+        <div class="mini-card mini-location"><span>⌖</span><div><small>Nearby opportunity</small><b>2.4 km away</b></div></div>
+        <div class="mini-card mini-hired"><span>✓</span><div><small>Placement confirmed</small><b>Joining Monday</b></div></div>
+        <div class="hero-figure" aria-hidden="true">
+          <div class="head"></div><div class="body"></div><div class="arm"></div><div class="leg one"></div><div class="leg two"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-categories" id="services" aria-labelledby="categoriesTitle">
+      <div class="section-heading compact">
+        <div><span class="kicker">Explore work</span><h2 id="categoriesTitle">Skills in demand</h2></div>
+        <a href="#jobs">View all jobs <span>→</span></a>
+      </div>
+      <div class="category-grid">
+        <button class="category" data-category="Driver"><span class="category-icon">◉</span><b>Drivers</b><small>Car, taxi & commercial</small><i>128 jobs</i></button>
+        <button class="category" data-category="Heavy"><span class="category-icon">▰</span><b>Heavy vehicle</b><small>Truck, trailer & bus</small><i>74 jobs</i></button>
+        <button class="category" data-category="Warehouse"><span class="category-icon">▦</span><b>Warehouse</b><small>Loaders, packers & staff</small><i>96 jobs</i></button>
+        <button class="category" data-category="Industrial"><span class="category-icon">⚙</span><b>Industrial</b><small>Operators & technicians</small><i>53 jobs</i></button>
+        <button class="category" data-category="Home"><span class="category-icon">⌂</span><b>Home services</b><small>Helpers, care & cleaning</small><i>62 jobs</i></button>
+        <button class="category" data-category="Delivery"><span class="category-icon">➜</span><b>Delivery</b><small>Riders & local logistics</small><i>145 jobs</i></button>
+      </div>
+    </section>
+
+    <section class="jobs-section" id="jobs">
+      <div class="section-heading">
+        <div><span class="kicker">Fresh opportunities</span><h2>Jobs ready for you</h2><p>Clear pay, verified employers and practical requirements.</p></div>
+        <div class="job-filters" role="group" aria-label="Filter jobs">
+          <button class="filter active" data-filter="All">All</button>
+          <button class="filter" data-filter="Urgent">Urgent</button>
+          <button class="filter" data-filter="Full-time">Full-time</button>
+          <button class="filter" data-filter="Daily wage">Daily wage</button>
+        </div>
+      </div>
+      <div class="job-list" id="jobList"></div>
+      <div class="empty-state" id="emptyState" hidden>No matching jobs yet. Try a different role or location.</div>
+    </section>
+
+    <section class="employer-band">
+      <div class="employer-copy">
+        <span class="kicker light">For employers</span>
+        <h2>Build your workforce.<br>Without the waiting.</h2>
+        <p>Tell us what you need and Vinkos helps you reach suitable, ready-to-work candidates—from one urgent hire to an entire shift.</p>
+        <div class="employer-actions"><button class="button button-accent" data-open="post">Request manpower</button><button class="button button-outline" data-open="callback">Talk to our team</button></div>
+      </div>
+      <div class="request-panel">
+        <div class="panel-head"><div><small>ACTIVE REQUEST</small><strong>Warehouse workforce</strong></div><span>In progress</span></div>
+        <div class="request-stat"><strong>24</strong><span>workers needed<br><small>Day & night shifts</small></span></div>
+        <div class="pipeline">
+          <div><i style="--w:92%"></i><span>Matched</span><b>38</b></div>
+          <div><i style="--w:68%"></i><span>Shortlisted</span><b>26</b></div>
+          <div><i style="--w:48%"></i><span>Confirmed</span><b>18</b></div>
+        </div>
+        <div class="candidate-stack"><span>AK</span><span>PM</span><span>SK</span><span>RJ</span><b>+34 candidates</b></div>
+      </div>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="section-heading centered"><div><span class="kicker">Simple by design</span><h2>From search to start in three steps</h2></div></div>
+      <div class="steps">
+        <article><span>01</span><div class="step-icon">◎</div><h3>Create your profile</h3><p>Add your skills, experience and preferred location using your mobile number.</p></article>
+        <article><span>02</span><div class="step-icon">⌕</div><h3>Find the right match</h3><p>Browse clear job listings or review suitable workers for your requirement.</p></article>
+        <article><span>03</span><div class="step-icon">✓</div><h3>Connect and start</h3><p>Apply or shortlist in one tap, schedule a call and confirm the joining date.</p></article>
+      </div>
+    </section>
+
+    <section class="safety-section">
+      <div class="safety-art"><div class="shield">✓</div><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div>
+      <div class="safety-copy"><span class="kicker">Trust comes first</span><h2>Safer opportunities.<br>Stronger partnerships.</h2><p>Vinkos is designed around transparent job details, identity checks and responsive support—so workers and employers can connect with confidence.</p><ul><li>Identity and licence verification</li><li>Employer and job-post review</li><li>Ratings, reporting and support</li></ul></div>
+    </section>
+
+    <section class="final-cta">
+      <span class="kicker light">Your next move starts here</span>
+      <h2>Find work. Find people.<br><em>Move forward with Vinkos.</em></h2>
+      <div><button class="button button-accent" data-scroll-jobs>Explore jobs</button><button class="button button-light" data-open="post">Hire workers</button></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark"><i></i><i></i></span><span>VINKOS</span></div>
+    <p>Connecting dependable people with meaningful work.</p>
+    <div class="footer-links"><a href="#jobs">Find jobs</a><a href="#services">Services</a><a href="#how">How it works</a><button data-open="callback">Contact</button></div>
+    <small>© 2026 Vinkos. Prototype experience.</small>
+  </footer>
+
+  <dialog id="modal">
+    <button class="modal-close" aria-label="Close">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
