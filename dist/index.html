@@ -3,162 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Vinkos connects verified workers with companies and households that need dependable manpower.">
-  <title>Vinkos — Work that moves you forward</title>
+  <meta name="description" content="Vinkos connects dependable people with meaningful jobs and helps Indian businesses build reliable workforces.">
+  <title>Vinkos | Recruitment & Workforce Solutions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
+  <div class="utility-bar"><div class="utility-inner"><span>People-first manpower solutions across India</span><div><button data-open="contact">Contact us</button><span>India · English</span></div></div></div>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Vinkos home">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
-      <span>VINKOS</span>
-    </a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#jobs">Find jobs</a>
-      <a href="#services">Hire workers</a>
-      <a href="#how">How it works</a>
-    </nav>
-    <div class="header-actions">
-      <button class="text-button" data-open="signin">Sign in</button>
-      <button class="button button-dark" data-open="post">Post a job</button>
-    </div>
-    <button class="menu-button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <a class="brand brand-image" href="#top" aria-label="Vinkos home"><img src="assets/vinkos-logo-gold.png" alt="Vinkos Workforce Solutions"></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="#jobs">For Job Seekers</a><a href="#employers">For Employers</a><a href="#solutions">Our Solutions</a><a href="#industries">Industries We Serve</a><a href="#about">About Us</a></nav>
+    <div class="nav-actions"><button class="search-trigger" data-scroll="jobs" aria-label="Search jobs">⌕</button><button class="button button-primary" data-open="hire">Start Hiring</button></div>
+    <button class="menu-button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-copy">
-        <div class="eyebrow"><span></span> Trusted manpower, when you need it</div>
-        <h1>Work that moves<br><em>everyone forward.</em></h1>
-        <p>Vinkos connects skilled workers with verified employers—from local driving jobs to large-scale industrial manpower.</p>
-
-        <div class="intent-switch" role="tablist" aria-label="Choose your goal">
-          <button class="active" data-intent="find" role="tab" aria-selected="true">I want a job</button>
-          <button data-intent="hire" role="tab" aria-selected="false">I want to hire</button>
-        </div>
-        <form class="hero-search" id="heroSearch">
-          <label>
-            <span>What work?</span>
-            <input id="searchRole" type="search" placeholder="Driver, helper, operator…">
-          </label>
-          <label>
-            <span>Where?</span>
-            <input id="searchLocation" type="search" placeholder="City or area">
-          </label>
-          <button class="button button-accent" type="submit">Search jobs <span>→</span></button>
-        </form>
-        <div class="trust-row">
-          <div class="avatars" aria-hidden="true"><b>AK</b><b>RS</b><b>MJ</b></div>
-          <p><strong>Simple. Local. Reliable.</strong><br>Built for workers and growing businesses.</p>
-        </div>
-      </div>
-
-      <div class="hero-visual" aria-label="Example Vinkos job match">
-        <div class="visual-orbit orbit-one"></div>
-        <div class="visual-orbit orbit-two"></div>
-        <div class="worker-card">
-          <div class="worker-top">
-            <div class="worker-photo">RK</div>
-            <div><strong>Rajesh Kumar</strong><span>Heavy vehicle driver</span></div>
-            <i class="verified">✓</i>
-          </div>
-          <div class="worker-meta">
-            <span>★ 4.8 rating</span><span>8 yrs exp.</span><span>Available now</span>
-          </div>
-          <div class="match-line"><span></span><b>96% match</b></div>
-        </div>
-        <div class="mini-card mini-location"><span>⌖</span><div><small>Nearby opportunity</small><b>2.4 km away</b></div></div>
-        <div class="mini-card mini-hired"><span>✓</span><div><small>Placement confirmed</small><b>Joining Monday</b></div></div>
-        <div class="hero-figure" aria-hidden="true">
-          <div class="head"></div><div class="body"></div><div class="arm"></div><div class="leg one"></div><div class="leg two"></div>
-        </div>
-      </div>
+      <img src="assets/vinkos-workforce-hero.png" alt="Professional logistics worker at a modern distribution hub"><div class="hero-overlay"></div>
+      <div class="hero-content"><span class="eyebrow light">Recruitment & workforce solutions</span><h1>People power<br><em>every possibility.</em></h1><p>We connect skilled workers with meaningful opportunities and help businesses build dependable teams—quickly, locally and responsibly.</p><div class="hero-actions"><button class="button button-coral" data-scroll="jobs">Find a job</button><button class="button button-ghost" data-open="hire">Find talent</button></div></div>
+      <div class="hero-stats"><div><strong>12+</strong><span>workforce categories</span></div><div><strong>24 hr</strong><span>urgent response goal</span></div><div><strong>100%</strong><span>transparent job details</span></div></div>
     </section>
 
-    <section class="quick-categories" id="services" aria-labelledby="categoriesTitle">
-      <div class="section-heading compact">
-        <div><span class="kicker">Explore work</span><h2 id="categoriesTitle">Skills in demand</h2></div>
-        <a href="#jobs">View all jobs <span>→</span></a>
-      </div>
-      <div class="category-grid">
-        <button class="category" data-category="Driver"><span class="category-icon">◉</span><b>Drivers</b><small>Car, taxi & commercial</small><i>128 jobs</i></button>
-        <button class="category" data-category="Heavy"><span class="category-icon">▰</span><b>Heavy vehicle</b><small>Truck, trailer & bus</small><i>74 jobs</i></button>
-        <button class="category" data-category="Warehouse"><span class="category-icon">▦</span><b>Warehouse</b><small>Loaders, packers & staff</small><i>96 jobs</i></button>
-        <button class="category" data-category="Industrial"><span class="category-icon">⚙</span><b>Industrial</b><small>Operators & technicians</small><i>53 jobs</i></button>
-        <button class="category" data-category="Home"><span class="category-icon">⌂</span><b>Home services</b><small>Helpers, care & cleaning</small><i>62 jobs</i></button>
-        <button class="category" data-category="Delivery"><span class="category-icon">➜</span><b>Delivery</b><small>Riders & local logistics</small><i>145 jobs</i></button>
-      </div>
+    <section class="pathway-strip" aria-label="Choose your pathway">
+      <article><span class="path-number">01</span><div><small>FOR JOB SEEKERS</small><h2>Ready for your next opportunity?</h2><p>Explore verified jobs that match your skills, location and availability.</p></div><button data-scroll="jobs" aria-label="Explore jobs">→</button></article>
+      <article><span class="path-number">02</span><div><small>FOR EMPLOYERS</small><h2>Need the right people, right now?</h2><p>From one specialist to an entire shift, tell us what your team needs.</p></div><button data-open="hire" aria-label="Hire workers">→</button></article>
     </section>
 
-    <section class="jobs-section" id="jobs">
-      <div class="section-heading">
-        <div><span class="kicker">Fresh opportunities</span><h2>Jobs ready for you</h2><p>Clear pay, verified employers and practical requirements.</p></div>
-        <div class="job-filters" role="group" aria-label="Filter jobs">
-          <button class="filter active" data-filter="All">All</button>
-          <button class="filter" data-filter="Urgent">Urgent</button>
-          <button class="filter" data-filter="Full-time">Full-time</button>
-          <button class="filter" data-filter="Daily wage">Daily wage</button>
-        </div>
-      </div>
-      <div class="job-list" id="jobList"></div>
-      <div class="empty-state" id="emptyState" hidden>No matching jobs yet. Try a different role or location.</div>
+    <section class="job-search-section" id="jobs">
+      <div class="section-intro narrow"><span class="eyebrow">Find work with Vinkos</span><h2>Your next opportunity starts here.</h2><p>Search active roles across driving, logistics, warehousing, manufacturing and essential services.</p></div>
+      <form class="job-search" id="jobSearch"><label><span>Keyword or role</span><input id="roleInput" type="search" placeholder="Driver, operator, helper…"></label><label><span>Location</span><input id="locationInput" type="search" placeholder="City or area"></label><label><span>Job type</span><select id="typeInput"><option value="All">All job types</option><option>Full-time</option><option>Contract</option><option>Daily wage</option></select></label><button class="button button-primary" type="submit">Search jobs</button></form>
+      <div class="job-meta"><span id="jobCount">6 opportunities</span><button id="clearSearch">Clear filters</button></div><div class="job-list" id="jobList"></div><div class="empty-state" id="emptyState" hidden><strong>No jobs match those filters yet.</strong><span>Try another role, location or job type.</span></div><div class="center-action"><button class="button button-outline-dark" data-open="profile">Create a candidate profile</button></div>
     </section>
 
-    <section class="employer-band">
-      <div class="employer-copy">
-        <span class="kicker light">For employers</span>
-        <h2>Build your workforce.<br>Without the waiting.</h2>
-        <p>Tell us what you need and Vinkos helps you reach suitable, ready-to-work candidates—from one urgent hire to an entire shift.</p>
-        <div class="employer-actions"><button class="button button-accent" data-open="post">Request manpower</button><button class="button button-outline" data-open="callback">Talk to our team</button></div>
-      </div>
-      <div class="request-panel">
-        <div class="panel-head"><div><small>ACTIVE REQUEST</small><strong>Warehouse workforce</strong></div><span>In progress</span></div>
-        <div class="request-stat"><strong>24</strong><span>workers needed<br><small>Day & night shifts</small></span></div>
-        <div class="pipeline">
-          <div><i style="--w:92%"></i><span>Matched</span><b>38</b></div>
-          <div><i style="--w:68%"></i><span>Shortlisted</span><b>26</b></div>
-          <div><i style="--w:48%"></i><span>Confirmed</span><b>18</b></div>
-        </div>
-        <div class="candidate-stack"><span>AK</span><span>PM</span><span>SK</span><span>RJ</span><b>+34 candidates</b></div>
-      </div>
-    </section>
+    <section class="safety-alert"><div class="safety-icon">!</div><div><span class="eyebrow">Your safety matters</span><h2>Vinkos never charges workers for a job.</h2><p>Do not pay anyone for interviews, job offers, verification or placement. Confirm suspicious messages with the Vinkos team before sharing personal information.</p></div><button class="button button-dark" data-open="contact">Report a concern</button></section>
 
-    <section class="how-section" id="how">
-      <div class="section-heading centered"><div><span class="kicker">Simple by design</span><h2>From search to start in three steps</h2></div></div>
-      <div class="steps">
-        <article><span>01</span><div class="step-icon">◎</div><h3>Create your profile</h3><p>Add your skills, experience and preferred location using your mobile number.</p></article>
-        <article><span>02</span><div class="step-icon">⌕</div><h3>Find the right match</h3><p>Browse clear job listings or review suitable workers for your requirement.</p></article>
-        <article><span>03</span><div class="step-icon">✓</div><h3>Connect and start</h3><p>Apply or shortlist in one tap, schedule a call and confirm the joining date.</p></article>
-      </div>
-    </section>
+    <section class="about-section" id="about"><div class="about-panel"><span class="eyebrow">About Vinkos</span><h2>Building careers.<br>Powering business.</h2></div><div class="about-copy"><p class="lead">Vinkos is an Indian manpower solutions company built to make hiring simpler and employment more accessible.</p><p>We work with employers that need dependable talent and people who want transparent, dignified work. Our local-first approach brings practical knowledge of skills, shifts, licences and working conditions into every match.</p><a href="#solutions">Discover how we work <span>→</span></a></div></section>
 
-    <section class="safety-section">
-      <div class="safety-art"><div class="shield">✓</div><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div>
-      <div class="safety-copy"><span class="kicker">Trust comes first</span><h2>Safer opportunities.<br>Stronger partnerships.</h2><p>Vinkos is designed around transparent job details, identity checks and responsive support—so workers and employers can connect with confidence.</p><ul><li>Identity and licence verification</li><li>Employer and job-post review</li><li>Ratings, reporting and support</li></ul></div>
-    </section>
+    <section class="promise-section"><div class="section-intro centered"><span class="eyebrow">Why work with us</span><h2>Better matches create stronger futures.</h2></div><div class="promise-grid"><article><div class="promise-icon">◎</div><h3>Get the right fit, fast</h3><p>Clear requirements and thoughtful screening help workers and employers make confident decisions.</p></article><article><div class="promise-icon">↗</div><h3>Grow with confidence</h3><p>Career guidance, documented experience and skill pathways help workers build long-term employability.</p></article><article><div class="promise-icon">◇</div><h3>Inclusive by design</h3><p>Mobile-first registration, regional-language support and simple applications open more doors.</p></article><article><div class="promise-icon">✓</div><h3>Transparent and trusted</h3><p>Verified employers, clear pay information and accessible support protect every placement.</p></article></div></section>
 
-    <section class="final-cta">
-      <span class="kicker light">Your next move starts here</span>
-      <h2>Find work. Find people.<br><em>Move forward with Vinkos.</em></h2>
-      <div><button class="button button-accent" data-scroll-jobs>Explore jobs</button><button class="button button-light" data-open="post">Hire workers</button></div>
-    </section>
+    <section class="solutions-section" id="solutions"><div class="section-intro split"><div><span class="eyebrow light">Our workforce solutions</span><h2>Flexible people solutions for every stage of growth.</h2></div><p>Vinkos helps organisations source, deploy and support talent while keeping worker experience at the centre.</p></div><div class="solutions-grid">
+      <article><span>01</span><div class="solution-icon">⌁</div><h3>Contract Staffing</h3><p>Skilled people for defined projects, seasonal demand and changing workloads.</p><button data-open="hire">Explore solution →</button></article>
+      <article><span>02</span><div class="solution-icon">◉</div><h3>Permanent Recruitment</h3><p>Structured sourcing and screening for dependable long-term team members.</p><button data-open="hire">Explore solution →</button></article>
+      <article><span>03</span><div class="solution-icon">▦</div><h3>Bulk & Project Hiring</h3><p>Coordinated hiring for warehouses, plants, logistics hubs and new locations.</p><button data-open="hire">Explore solution →</button></article>
+      <article><span>04</span><div class="solution-icon">≋</div><h3>Payroll Support</h3><p>Organised workforce records, attendance coordination and payroll assistance.</p><button data-open="hire">Explore solution →</button></article>
+      <article><span>05</span><div class="solution-icon">⌖</div><h3>Local Talent Pools</h3><p>Ready-to-work candidates sourced around your operating locations.</p><button data-open="hire">Explore solution →</button></article>
+      <article><span>06</span><div class="solution-icon">◇</div><h3>Compliance Guidance</h3><p>Practical onboarding and documentation support for responsible workforce deployment.</p><button data-open="contact">Explore solution →</button></article>
+    </div></section>
+
+    <section class="profile-cta"><div><span class="eyebrow light">For job seekers</span><h2>Create a profile and let the right jobs find you.</h2><p>Tell us your skills, licence, preferred location and availability. We’ll use your profile to surface suitable opportunities.</p></div><button class="button button-white" data-open="profile">Start your profile</button></section>
+
+    <section class="industries-section" id="industries"><div class="section-intro split dark-text"><div><span class="eyebrow">Industries we serve</span><h2>Local expertise across essential sectors.</h2></div><p>We understand that each worksite has different skill, safety, shift and compliance needs.</p></div><div class="industry-grid"><button data-industry="Logistics"><span>01</span><b>Logistics & Supply Chain</b><i>→</i></button><button data-industry="Manufacturing"><span>02</span><b>Manufacturing & Industrial</b><i>→</i></button><button data-industry="Transport"><span>03</span><b>Transport & Mobility</b><i>→</i></button><button data-industry="Retail"><span>04</span><b>Retail & E-commerce</b><i>→</i></button><button data-industry="Construction"><span>05</span><b>Construction & Infrastructure</b><i>→</i></button><button data-industry="Hospitality"><span>06</span><b>Hospitality & Facilities</b><i>→</i></button></div></section>
+
+    <section class="employer-section" id="employers"><div class="employer-copy"><span class="eyebrow light">For employers</span><h2>A winning workforce is humanly possible.</h2><p>Whether you need an urgent replacement, a full shift or a long-term hiring partner, Vinkos brings local talent knowledge and responsive coordination to the table.</p><ul><li>We ask and listen</li><li>We source and verify</li><li>We coordinate and support</li></ul><button class="button button-coral" data-open="hire">Discuss your requirement</button></div><div class="employer-dashboard"><div class="dashboard-head"><span>Active requirement</span><b>Warehouse workforce</b><i>Matching</i></div><div class="dashboard-number"><strong>24</strong><span>workers required<br><small>Bengaluru · 2 shifts</small></span></div><div class="progress-row"><span>Matched</span><i style="--progress:92%"></i><b>38</b></div><div class="progress-row"><span>Screened</span><i style="--progress:68%"></i><b>26</b></div><div class="progress-row"><span>Confirmed</span><i style="--progress:47%"></i><b>18</b></div><div class="candidate-row"><span>AK</span><span>PM</span><span>SK</span><span>RJ</span><b>+34 candidates</b></div></div></section>
+
+    <section class="final-cta"><span class="eyebrow light">Move forward with Vinkos</span><h2>The right opportunity.<br>The right people. <em>One trusted partner.</em></h2><div><button class="button button-coral" data-scroll="jobs">Search jobs</button><button class="button button-ghost" data-open="hire">Start hiring</button></div></section>
   </main>
 
-  <footer>
-    <div class="brand footer-brand"><span class="brand-mark"><i></i><i></i></span><span>VINKOS</span></div>
-    <p>Connecting dependable people with meaningful work.</p>
-    <div class="footer-links"><a href="#jobs">Find jobs</a><a href="#services">Services</a><a href="#how">How it works</a><button data-open="callback">Contact</button></div>
-    <small>© 2026 Vinkos. Prototype experience.</small>
-  </footer>
+  <footer><div class="footer-top"><div class="footer-brand"><a class="brand brand-image" href="#top"><img src="assets/vinkos-logo-gold.png" alt="Vinkos Workforce Solutions"></a><p>Connecting dependable people with meaningful work across India.</p></div><div><h3>For Job Seekers</h3><a href="#jobs">Search jobs</a><button data-open="profile">Create a profile</button><a href="#about">Working with Vinkos</a><button data-open="contact">Job safety</button></div><div><h3>For Employers</h3><a href="#solutions">Our solutions</a><button data-open="hire">Request manpower</button><a href="#industries">Industries</a><button data-open="contact">Contact team</button></div><div><h3>Company</h3><a href="#about">About us</a><a href="#solutions">How we work</a><button data-open="contact">Find a branch</button><button data-open="contact">Support</button></div></div><div class="footer-bottom"><span>© 2026 Vinkos Workforce Solutions. Prototype.</span><div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Accessibility</a></div></div></footer>
 
-  <dialog id="modal">
-    <button class="modal-close" aria-label="Close">×</button>
-    <div id="modalContent"></div>
-  </dialog>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
+  <dialog id="modal"><button class="modal-close" aria-label="Close">×</button><div id="modalContent"></div></dialog><div class="toast" id="toast" role="status" aria-live="polite"></div><script src="app.js?v=2"></script>
 </body>
 </html>
